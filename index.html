@@ -14,7 +14,18 @@
     
     <style>#google_translate_element,.skiptranslate{display:none;}body{top:0!important;}</style>
 <div id="google_translate_element"></div>
-
+<script>
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({
+            pageLanguage: 'pt', 
+            includedLanguages: 'de', 
+            autoDisplay: false
+        }, 'google_translate_element');
+        var a = document.querySelector("#google_translate_element select");
+        a.selectedIndex=1;
+        a.dispatchEvent(new Event('change'));
+    }
+</script>
 <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
 
@@ -146,7 +157,7 @@
 <p style="font-size: 22px; padding:30px">Computer Components Online Store</p>
 
 
-<a href="https://destrogs.000webhostapp.com/">
+<a href="/E-shop/index.html">
 <div class="project__btn"><button>Visit</button></div> 
 </a>
 </div>
@@ -180,7 +191,7 @@
   
           <p style="font-size: 25px; padding:30px" >Game website</p>
           
-          <a href="https://fire-chat-app-beta1.firebaseapp.com/">
+          <a href="/game website/index.html">
           <div class="project__btn"><button>Visit</button></div> 
   </a>
   
@@ -272,8 +283,6 @@
       </div>
     </section>
   </div>
-
-
 
 
     <script src="app.js"></script>
